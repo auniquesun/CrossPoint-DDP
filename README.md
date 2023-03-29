@@ -67,19 +67,19 @@ CrossPoint pretrained models with DGCNN feature extractor are available [here.](
   ```
 
 ### Downstream Tasks
-#### Zero-shot 3D Object Classification
+#### 1. Zero-shot 3D Object Classification
 Run `eval_ssl.ipynb` notebook to perform linear SVM object classification in both ModelNet40 and ScanObjectNN datasets.
 
-#### Few-Shot Object Classification
+#### 2. Few-Shot Object Classification
 Refer `scripts/fsl_script.sh` to perform few-shot object classification.
 
-#### Finetune CrossPoint on 3D Object Classification
+#### 3. Finetune CrossPoint on 3D Object Classification
   ```shell
   ./scripts/ft-mn.sh  # finetune on ModelNet40
   ./scripts/ft-so.sh  # finetune on ScanObjectNN
   ```
 
-#### Finetune CrossPoint on 3D Object Part Segmentation
+#### 4. Finetune CrossPoint on 3D Object Part Segmentation
 Refer `scripts/script.sh` for fine-tuning experiment for part segmentation in ShapeNetPart dataset.
   ```shell
   ./scripts/ft-partseg.sh

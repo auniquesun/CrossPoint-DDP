@@ -5,7 +5,7 @@ This repository is a PyTorchDistributedDataParallel (DDP) re-implementation of t
 the [original implementation](https://github.com/MohamedAfham/CrossPoint) by the author is for single-GPU learning
 and the procedure is much slower, especially when contrastive pre-training on ShapeNetRender. 
 
-* Second, the re-implementation adds necessary comments, removes unused packages, unify the code style, re-organize README, etc. 
+* Second, the re-implementation adds necessary comments, removes unused packages, optimizes the code style, re-organizes README, etc. 
 
     ![](images/crosspoint_architecture.png)
 
@@ -72,13 +72,13 @@ Run `eval_ssl.ipynb` notebook to perform linear SVM object classification in bot
 #### 2. Few-Shot Object Classification
 Refer `scripts/fsl_script.sh` to perform few-shot object classification.
 
-#### 3. Finetune CrossPoint on 3D Object Classification
+#### 3. Finetune CrossPoint for 3D Object Classification
   ```shell
   ./scripts/ft-mn.sh  # finetune on ModelNet40
   ./scripts/ft-so.sh  # finetune on ScanObjectNN
   ```
 
-#### 4. Finetune CrossPoint on 3D Object Part Segmentation
+#### 4. Finetune CrossPoint for 3D Object Part Segmentation
   ```shell
   ./scripts/ft-partseg.sh
   ```

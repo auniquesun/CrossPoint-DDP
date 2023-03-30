@@ -80,7 +80,6 @@ Refer `scripts/fsl_script.sh` to perform few-shot object classification.
   ```
 
 #### 4. Finetune CrossPoint on 3D Object Part Segmentation
-Refer `scripts/script.sh` for fine-tuning experiment for part segmentation in ShapeNetPart dataset.
   ```shell
   ./scripts/ft-partseg.sh
   ```

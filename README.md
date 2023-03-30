@@ -32,10 +32,9 @@ and the procedure is much slower, especially when contrastive pre-training on Sh
 ### W&B Server Setup
 We track the model training and fine-tuning with W&B tools. The official W&B tools may be slow and unstable since 
 they are on remote servers, we install the local version by running the following command. 
-
-```shell
-  docker run --rm -d -v wandb:/vol -p 28282:8080 --name wandb-local wandb/local:0.9.41
-```
+  ```shell
+    docker run --rm -d -v wandb:/vol -p 28282:8080 --name wandb-local wandb/local:0.9.41
+  ```
 
 If you do not have Docker installed on your computer before, referring to the [official document](https://docs.docker.com/engine/install/ubuntu/) to finish Docker installation on Ubuntu.
 
@@ -48,7 +47,7 @@ CrossPoint pretrained models with DGCNN feature extractor are available [here.](
     cd data
     source download_data.sh
     ```
-2. The directories of the downloaded datasets should be organized as follows
+2. The directories of the downloaded datasets should be organized as follows.
     ```
     |- CrossPoint-DDP
     |---- data
@@ -85,6 +84,6 @@ Refer `scripts/fsl_script.sh` to perform few-shot object classification.
   ```
 
 ## Acknowledgements
-The re-implementation is partially inspired by the following projects, thanks to their hard work
+The re-implementation is partially inspired by the following projects, thanks to their hard work.
 * [CrossPoint](https://github.com/MohamedAfham/CrossPoint)
 * [DGCNN](https://github.com/WangYueFt/dgcnn) 
